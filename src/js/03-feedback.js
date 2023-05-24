@@ -36,7 +36,6 @@ function populateFeedbackForm() {
   const data = localStorage.getItem(STORAGE_KEY);
   if (data) {
     formData = JSON.parse(data);
-
     refs.input.value = formData.email;
     refs.textarea.value = formData.message;
   }
