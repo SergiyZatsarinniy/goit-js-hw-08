@@ -20,7 +20,7 @@ populateFeedbackForm();
 
 function onFormSubmit(e) {
   e.preventDefault();
-  console.log({ email: refs.input.value, message: refs.input.value });
+  console.log({ email: refs.input.value, message: refs.textarea.value });
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
