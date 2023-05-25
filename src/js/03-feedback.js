@@ -20,9 +20,7 @@ populateFeedbackForm();
 
 function onFormSubmit(e) {
   e.preventDefault();
-  console.log('Form submitted!');
-  console.log('Email:', formData.email);
-  console.log('Message:', formData.message);
+  console.log({ email: refs.input.value, message: refs.input.value });
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
